@@ -1,7 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import redirectsPlugin from './redirects.config';
+// import redirectsPlugin from './redirects.config';
 
 const baseUrl = process.env.SITE_BASE_URL ?? '/';
 const isDocsArchive = process.env.IS_DOCS_ARCHIVE === 'true';
@@ -47,7 +47,7 @@ const config: Config = {
         label: 'English',
       },
       jp: {
-        label: '日本語',        
+        label: '日本語',
       },
     },
   },
@@ -88,7 +88,7 @@ const config: Config = {
 
   plugins: [
     'docusaurus-plugin-sass',
-    redirectsPlugin,
+    // redirectsPlugin,
     './src/plugins/google-fonts.ts',
     './src/plugins/module-details.ts',
     'plugin-image-zoom',
@@ -147,7 +147,7 @@ const config: Config = {
         {
           type: 'localeDropdown',
           position: 'right',
-        },        
+        },
       ],
     },
     prism: {
